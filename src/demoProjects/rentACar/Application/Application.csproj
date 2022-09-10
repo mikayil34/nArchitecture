@@ -7,13 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\brandFeature\" />
+    <Folder Include="Features\Brands\" />
+    <Folder Include="Features\Models\" />
+    <Folder Include="Features\Queris\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
     <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
- 
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
 
 </Project>
